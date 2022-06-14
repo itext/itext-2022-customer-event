@@ -1,0 +1,61 @@
+<html>
+<head>
+    <style type="text/css">
+
+		@page {
+			size: A5;
+			margin: 1.0in;
+			border: thin solid black;
+			padding: 1em;
+			font-size: 26px;
+
+			@top-right {
+				content: element(footer);
+			}
+
+			@bottom-center {
+				content: 'Page 'counter(page)' of 'counter(pages);
+			}
+		}
+
+		#page-footer {
+			display: none;
+		}
+
+		@media print {
+			#page-footer {
+				display: block;
+			}
+		}
+
+    </style>
+</head>
+
+<body>
+
+<div id="page-footer" style="position: running(footer)">
+
+    <div style="display: flex; align-items: center; justify-content: center;">
+        <p style="margin: 0pt; font-weight: bold; width: 250px;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt.
+        </p>
+        <img src="itext.svg" style="height:50px;">
+    </div>
+
+</div>
+
+<div id="page-content" style="font-size: 12px;">
+    <p>
+        Crossing this dusky entry, and on through yon low-arched way—cut through what in old times must have been a great central chimney with fireplaces all round—you enter the public room. A still duskier place is this, with such low ponderous beams above, and such old wrinkled planks beneath, that you would almost fancy you trod some old craft’s cockpits, especially of such a howling night, when this corner-anchored old ark rocked so furiously. On one side stood a long, low, shelf-like table covered with cracked glass cases, filled with dusty rarities gathered from this wide world’s remotest nooks. Projecting from the further angle of the room stands a dark-looking den—the bar—a rude attempt at a right whale’s head. Be that how it may, there stands the vast arched bone of the whale’s jaw, so wide, a coach might almost drive beneath it. Within are shabby shelves, ranged round with old decanters, bottles, flasks; and in those jaws of swift destruction, like another cursed Jonah (by which name indeed they called him), bustles a little withered old man, who, for their money, dearly sells the sailors deliriums and death.
+    </p>
+    <p>
+        Abominable are the tumblers into which he pours his poison. Though true cylinders without—within, the villanous green goggling glasses deceitfully tapered downwards to a cheating bottom. Parallel meridians rudely pecked into the glass, surround these footpads’ goblets. Fill to this mark, and your charge is but a penny; to this a penny more; and so on to the full glass—the Cape Horn measure, which you may gulp down for a shilling.
+    <p style="page-break-after:always;">
+        Upon entering the place I found a number of young seamen gathered about a table, examining by a dim light divers specimens of skrimshander. I sought the landlord, and telling him I desired to be accommodated with a room, received for answer that his house was full—not a bed unoccupied. “But avast,” he added, tapping his forehead, “you haint no objections to sharing a harpooneer’s blanket, have ye? I s’pose you are goin’ a-whalin’, so you’d better get used to that sort of thing.”
+    </p>
+
+    <p>Page 2.</p>
+</div>
+</body>
+</html>
